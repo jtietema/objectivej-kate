@@ -83,6 +83,7 @@
         </Int>
         <HlCChar attribute="Char" context="#stay"/>
         <DetectChar attribute="String" context="String" char="&quot;"/>
+        <DetectChar attribute="String" context="String" char="&#39;"/>
         <Detect2Chars attribute="Comment" context="SingleLineComment" char="/" char1="/"/>
         <Detect2Chars attribute="Comment" context="MultiLineComment" char="/" char1="*"/>
         <AnyChar attribute="Symbol" context="#stay" String=":!%&amp;()+,-/.*&lt;=&gt;?[]|~^&#59;"/>
@@ -93,6 +94,7 @@
         <LineContinue attribute="String" context="#stay"/>
         <HlCStringChar attribute="String Char" context="#stay"/>
         <DetectChar attribute="String" context="#pop" char="&quot;"/>
+        <DetectChar attribute="String" context="#pop" char="&#39;"/>
       </context>
       <context attribute="Comment" lineEndContext="#pop" name="SingleLineComment"/>
       <context attribute="Comment" lineEndContext="#stay" name="MultiLineComment">
